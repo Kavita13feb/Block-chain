@@ -1,0 +1,246 @@
+
+body{
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    background: rgba(37,37,37,1) ;
+    background: linear-gradient(275deg, rgba(76,76,77,1) 13%, rgba(61,60,60,1) 30%, rgba(44,44,45,1) 53%, rgba(37,37,37,1) 66%);
+  background: url("https://www.michiganstateuniversityonline.com/wp-content/uploads/sites/3/2019/02/Brand-Protection-Potential-of-Blockchain-Technology.jpeg");
+  text-align: center;
+  
+  
+  }
+  
+  
+  .scene {
+    width: 30%;
+    perspective: 600px;
+    width: 30%; 
+    height: fit-content; 
+    margin:auto;
+    margin-top: 5%;
+  
+  
+  }
+  .card {
+    width: 100%;
+    height: 600px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    /* position: relative; */
+    border:1px solid red
+  }
+  
+  .card.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__face {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    /* color: white; */
+    text-align: center;
+    font-weight: bold;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* border-radius: 20px;  */
+  }
+  
+  .card__face--front {
+    /* background: 
+    radial-gradient(circle at center, transparent,#bdd3e8),
+   linear-gradient(to bottom, #316b99, #1f4d70); */
+  }
+  
+  .card__face--back {
+    /* background: 
+     radial-gradient(circle at center, transparent,#bdd3e8),
+    linear-gradient(to bottom, #316b99, #1f4d70); */
+    /* transform: rotateY(180deg); */
+  }
+  
+  .glass-container {
+    background-color: rgba(255, 255, 255, 0.15); /* Translucent background color */
+    border-radius: 50px;
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: fixed; 
+  top:50%;
+  left:50%;
+    transform: translate(-50%, -50%); 
+    margin: auto;
+    height:600px;
+   
+    
+  
+  }
+  
+  
+  .glass-content {
+    /* background-color: rgba(107, 127, 241, 0.1); */
+    border-radius: 10px;
+    padding: 3px;
+    width:60%;
+  /* transition: transform 0.3s, background-color 0.3s;  */
+  
+    /* height:250px; */
+    margin: auto;
+    /* border: 1px solid rgb(119,70,203); */
+  /* border: 1px solid linear-gradient(275deg, rgba(119,70,203,1) 13%, rgba(83,21,198,1) 30%, rgba(36,36,186,1) 53%, rgba(21,110,198,1) 66%); */
+    
+  color: white;
+  z-index:10;
+  background: rgb(21,110,198);
+  background: linear-gradient(275deg, rgba(21,110,198,1) 23%, rgba(18,18,210,1) 80%);
+  background: rgb(21,110,198);
+  background: linear-gradient(275deg, rgba(21,110,198,1) 23%, rgba(55,55,240,1) 80%);
+  background: rgb(48,64,80);
+  background: linear-gradient(275deg, rgba(48,64,80,1) 4%, rgba(21,110,198,1) 30%, rgba(55,55,240,1) 57%, rgba(50,50,51,1) 100%);
+  top:20%;
+  position: absolute; 
+  left:50%;
+  transform: translate(-50%, -50%); 
+  
+  }
+  
+  
+  
+  .glass-icon {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    color: white; /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    
+  }
+  
+  .qrcodeDiv{
+    /* border: 1px solid red; */
+    /* width: 80%; */
+    /* margin: auto; */
+  position: fixed;
+  top:25%;
+  left:35%;
+  color: rgb(12, 61, 110); ;
+  color: linear-gradient(275deg, rgb(44, 78, 111) 4%, rgb(20, 94, 167) 30%, rgb(36, 36, 203) 57%, rgba(50,50,51,1) 100%);
+  color:white
+  }
+  
+  
+  
+  ::-webkit-scrollbar {
+    /* width: 10px; Adjust the width as needed */
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* Color of the thumb and track */
+  
+  }
+  
+  /* Style the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.3) transparent;
+    scrollbar-width: thin; /* Width of the scrollbar */
+     /* or a background color of your choice */
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+  }
+  
+  /* Style the scrollbar thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* or a color of your choice */
+    border-radius: 10px;
+    visibility: hidden;
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* Color of the thumb and track */
+    scrollbar-width: thin; /* Width of the scrollbar */
+  
+    /* match the border radius of your component */
+  }
+  /* CustomSelectSmall.css */
+  
+  /* Apply a consistent scrollbar width to the container */
+  .custom-select-container {
+    width: 100%; /* Adjust the width as needed */
+    overflow: auto;
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* Color of the thumb and track */
+  }
+  
+  .glass-btn {
+    background-color: rgba(180, 181, 183, 0.1);
+    border-radius: 10px;
+    padding: 3px;
+    width:50%;
+    /* height:250px; */
+    margin: auto;
+    /* border: 1px solid rgb(119,70,203); */
+  /* border: 1px solid linear-gradient(275deg, rgba(119,70,203,1) 13%, rgba(83,21,198,1) 30%, rgba(36,36,186,1) 53%, rgba(21,110,198,1) 66%); */
+  top:60%;
+  
+  padding: 20px;
+  border: none;
+  color: rgb(12, 61, 110); ;
+  color: linear-gradient(275deg, rgb(44, 78, 111) 4%, rgb(20, 94, 167) 30%, rgb(36, 36, 203) 57%, rgba(50,50,51,1) 100%);
+  z-index:10;
+  position: absolute;
+  font-size: 18px;
+  left:25%;
+  font-weight: bold;
+  
+  /* transform: translate(-50%);  */
+    margin: auto; 
+  transition: transform 0.3s, background-color 0.3s;
+  
+  /* background: rgb(21,110,198);
+  background: linear-gradient(275deg, rgba(21,110,198,1) 23%, rgba(18,18,210,1) 80%);
+  background: rgb(21,110,198);
+  background: linear-gradient(275deg, rgba(21,110,198,1) 23%, rgba(55,55,240,1) 80%);
+  background: rgb(48,64,80);
+  background: linear-gradient(275deg, rgba(48,64,80,1) 4%, rgba(21,110,198,1) 30%, rgba(55,55,240,1) 57%, rgba(50,50,51,1) 100%); */
+  /* background: rgb(216,216,228);
+  background: linear-gradient(275deg, rgba(216,216,228,1) 0%, rgba(130,157,185,1) 94%);
+  background: rgb(231,231,249);
+  background: linear-gradient(275deg, rgba(231,231,249,1) 33%, rgba(227,227,232,1) 83%);
+  background: rgb(163,163,164);
+  background: linear-gradient(275deg, rgba(163,163,164,1) 33%, rgba(227,227,232,1) 83%); */
+  }
+  
+  .glass-btn:hover{
+    background-color: rgba(255, 255, 255, 0.2); 
+    transform: translateY(-8px) ;
+    color: rgb(19, 61, 104);
+    color: linear-gradient(275deg, rgb(28, 63, 97) 4%, rgb(40, 105, 170) 30%, rgb(51, 51, 179) 57%, rgb(54, 54, 60) 100%);
+  
+  }
+  
+  
+  @media (max-width: 768px) {
+    .scene {
+      width: 80%;
+      height: 700px;
+      margin: 50px 0;
+      perspective: 600px;
+      height: 700px; /* Adjust height as needed */
+      position: absolute; /* Position the div */
+      top: 50%; /* Adjust vertical position */
+      left: 50%; /* Adjust horizontal position */
+      transform: translate(-50%, -50%); /* Center the div */
+      
+    
+      
+    }
+    /* Add more media query styles for other elements as needed */
+  }
+  
